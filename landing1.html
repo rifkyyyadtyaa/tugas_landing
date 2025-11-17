@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        background: linear-gradient(to right, #3ee577, #0b8f2f);
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        left: 30px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      .teks {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+      }
+
+      ul li a {
+        color: white;
+        padding: 12px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      ul li a:hover {
+        background-color: #046333;
+      }
+      .atu{
+        width: 100%;
+        height: 500px;
+        background: linear-gradient(135deg, #A8FF80, #0E7A2E);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .fotos{
+        width: 60%;
+        height: auto;
+        max-width: 650px;
+        
+      }
+      .kotak{
+        width: 630px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        right: 70px; 
+      }
+      .isis{
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        right: 79px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        color: cornsilk;
+      }
+      .tua{
+        width: 100%;
+        height: 500px;
+        background: linear-gradient(to right, #1CA446, #053718);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .fotod{
+        width: 22%;
+        height: auto;
+        max-width: 300px;
+      }
+      .kot1{
+        width: 25%;
+        height: 260px;
+        background: rgba(255, 255, 255, 0.2);
+        left: 60px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .kot2{
+        width: 25%;
+        height: 260px;
+        background: rgba(255, 255, 255, 0.2);
+        left: 500px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .isid{
+        width: 95%;
+        height: 220px;
+        font-family: sans-serif;
+        color: cornsilk;
+      }
+      .isit{
+        width: 95%;
+        height: 200px;
+        font-family: sans-serif;
+        color: cornsilk;
+      }
+      .iga{
+        width: 100%;
+        height: 500px;
+        background: linear-gradient(to right, #D9FFCE, #81FF7A);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .fotot{
+        width: 35%;
+        height: auto;
+        max-width: 400px;
+      }
+      .kot4{
+        width: 30%;
+        height: 300px;
+        background: rgba(255, 255, 255, 0.2);
+        left: 500px;
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        left: 70px;
+      }
+      .kot5{
+        width: 30%;
+        height: 300px;
+        background: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        right: 70px; 
+      }
+      .bwh{
+        background: #0f1f14;
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        color: cornsilk;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 50px;
+      }
+      .isie{
+        width: 90%;
+        height: 250px;
+        color: rgb(105, 104, 101);
+        font-family: sans-serif;
+        padding: 20px;
+        text-align: center;
+      }
+      .isil{
+        width: 90%;
+        height: 300px;
+        font-family: sans-serif;
+        color: rgb(105, 104, 101);
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <img class="logo" src="Join_the_duolingo_minione-removebg-preview.png" />
+        <h4 class="teks">Duo Sigma</h4>
+      </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="atu">
+<img class="fotos" src="Duolingo_Referral_Links___Free_week_of_Duolingo_Plus_for_referrer-removebg-preview.png" alt="">
+<div class="kotak"></div>
+<div class="isis">
+  <h2>Selamat datang di Duo Sigma!
+Belajar di sini nggak pake ribet seru, ringan, dan gampang masuk ke otak.
+Yuk upgrade skill kamu dengan cara yang lebih fun, lebih fresh, dan tetap produktif!
+Belajar santai, hasil mantap</h2>
+</div>
+    </div>
+    <div class="tua">
+      <div class="kot1">
+<div class="isid">
+<h2>Belajar itu kadang bikin otak ngelag, tapi tenang,
+di Duo Sigma kamu bisa belajar pelan-pelan tapi nempel, kayak stiker di motor baru.
+Nggak perlu jenius yang penting konsisten!</h2>
+</div>
+      </div>
+      <div class="kot2">
+<div class="isit">
+<h2>Mau naik level? Tinggal gas!
+Materi di sini disusun rapi, jelas, dan gampang dipahami.
+Cocok buat kamu yang pengen upgrade skill tanpa drama dan tanpa pusing.</h2>
+</div>
+      </div>
+<img class="fotod" src="ijo1-removebg-preview.png" alt="">
+    </div>
+    <div class="iga">
+      <div class="kot4">
+<div class="isie">
+<h2>Belajar sendirian tuh kadang bikin ngantuk level dewa.
+Makanya di Duo Sigma, kamu bakal ditemenin materi yang interaktif, biar otak tetap online
+nggak loading terus kayak WiFi tetangga.</h2>
+</div>
+      </div>
+      <div class="kot5">
+<div class="isil">
+<h2>Mau hasil cepat tapi tetap santai? Bisa banget.
+Duo Sigma itu ibarat tempat nongkrong edukasi
+seru, ringan, tapi bikin kamu auto naik level tanpa sadar.
+Belajar jadi kayak main game tapi XP nya real!</h2>
+</div>
+      </div>
+<img class="fotot" src="download.png" alt="">
+    </div>
+    <footer class="bwh">
+<p>Duo Sigma — Tempat belajar anti ngantuk-ngantuk club</p>
+    </footer>
+  </body>
+</html>
